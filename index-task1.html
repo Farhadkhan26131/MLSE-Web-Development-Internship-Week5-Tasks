@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="style-task1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dictionary App</h1>
+        
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter a word...">
+            <button id="search-btn">Search</button>
+        </div>
+        
+        <div class="loader">
+            <div class="loader-spinner"></div>
+        </div>
+        
+        <div class="result-container">
+            <div class="word-title">
+                <h2 id="word"></h2>
+                <button id="audio-btn">🔊</button>
+            </div>
+            
+            <div class="details">
+                <p id="part-of-speech"></p>
+                <p id="phonetic"></p>
+            </div>
+            
+            <div class="meaning">
+                <h3>Meaning</h3>
+                <p id="definition"></p>
+            </div>
+            
+            <div class="example">
+                <h3>Example</h3>
+                <p id="example"></p>
+            </div>
+        </div>
+        
+        <div class="error-container">
+            <p id="error-message"></p>
+        </div>
+        
+        <div class="footer">
+            <p>Powered by Free Dictionary API</p>
+        </div>
+    </div>
+
+    <script src="script-task1.js"></script>
+</body>
+</html>
